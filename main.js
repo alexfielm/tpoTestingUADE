@@ -20,15 +20,16 @@ function registerUser(email, password) {
       return { ok: false, msg: "La contraseña debe tener al menos 6 caracteres." };
   users.push({ email, password });
   saveUsers(users);
-  return { ok: true, msg: "Usuario registrado con éxito ✅" };
+  return { ok: true, msg: "El usuario se registró con éxito" };
 }
 
 function loginUser(email, password) {
   const users = loadUsers();
   const user = users.find(u => u.email === email && u.password === password);
-  if (!user) return { ok: false, msg: "Credenciales incorrectas ❌" };
+  if (!user) return { ok: false, msg: "Datos incorrectos" };
   sessionStorage.setItem("sessionUser", JSON.stringify(user));
-  return { ok: true, msg: "Inicio de sesión exitoso 👋" };
+  window.location.href = "./catalogo/menu-principal.html";
+  return { ok: true, msg: ""};
 }
 
 function logoutUser() {
