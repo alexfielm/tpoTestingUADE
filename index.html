@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./login.css">
+  <meta charset="UTF-8" />
+  <title>Login / Registro</title>
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div>
-        <h1>Bienvenido a nuestra tienda</h1>
-        <h2>Inicia sesión</h2><br>
-        <form action="">
-            <label for="mail">Ingresa tu email</label><br>
-            <input type="email" id="mail" name="Usuario" required><br><br>
-            <label for="password">Ingresa tu contraseña</label><br>
-            <input type="password" id="password" name="Contraseña" required><br><br>
-            <a href="./catalogo/menu-principal.html"><button type="submit">Iniciar Sesion</button></a>
-            <a href="./registro.html"><button type="submit">Registrarse</button></a><br>
-        </form>
-    </div>
+  <div class="container">
+    <h1>Bienvenido a nuestra tienda</h1>
+    <img src="./assets-login/iconoPersona.png" alt="iconoPersona" style="width: 100px; height: 100px;">
+    <h2>Inicia sesión</h2>
+    <input id="email" type="email" placeholder="Ingresa tu email" required>
+    <input id="password" type="password" placeholder="Ingresa tu contraseña" required>
+    <button id="btnLogin">Iniciar sesión</button>
+    <button id="btnRegister">Registrarse</button>
+    <p id="msg"></p>
+  </div>
+  <script src="test.js"></script>
 </body>
 </html>
