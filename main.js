@@ -28,7 +28,7 @@ function loginUser(email, password) {
   const user = users.find(u => u.email === email && u.password === password);
   if (!user) return { ok: false, msg: "Datos incorrectos" };
   sessionStorage.setItem("sessionUser", JSON.stringify(user));
-  window.location.href = "./catalogo/menu-principal.html";
+  window.location.href = "./Menu.html";
   return { ok: true, msg: ""};
 }
 

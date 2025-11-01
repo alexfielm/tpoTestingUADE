@@ -1,0 +1,17 @@
+
+.li_menu{display: inline;padding: 6px;margin: 3px; background-color: rgb(175, 116, 26); border-radius: 7px;padding: 15px;}
+body{margin: 0;padding: 0;height: 100%; }
+.boton-compra{background-color:rgb(0, 183, 255);display: inline-block;color: black;padding: 15px 20px;margin: 10px;text-decoration: none;text-align: center;border-radius: 8px;}
+li a{text-decoration: none;color: black;}
+.resumen {width: 300px;background-color: #f3f3f3;padding: 20px;border-radius: 10px;text-align: center;}
+.contenedor-productos {display: flex;justify-content: space-between;align-items: flex-start;padding: 50px 100px;gap: 40px;}
+nav ul {list-style: none;padding: 0;display: flex;justify-content: center;gap: 15px;}
+nav a {text-decoration: none;color: black;}
+
+/* Bloque donde están las camperas */
+.lista-productos {
+  flex: 1; /* ocupa el resto del espacio disponible */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* organiza los productos en columnas */
+  gap: 20px;
+}
