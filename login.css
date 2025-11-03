@@ -61,3 +61,22 @@ body {
   .error{
     color: red;
 }
+.password-container {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.toggle-eye:hover {
+  color: #000;
+}

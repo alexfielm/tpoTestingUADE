@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <title>Login / Registro</title>
   <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <div class="container">
@@ -11,7 +13,10 @@
     <img src="./assets-login/iconoPersona.png" alt="iconoPersona" style="width: 100px; height: 100px;">
     <h2>Inicia sesión</h2>
     <input id="email" type="email" placeholder="Ingresa tu email" required>
-    <input id="password" type="password" placeholder="Ingresa tu contraseña" required>
+    <div class="password-container">
+      <input id="password" type="password" placeholder="Ingresa tu contraseña" required>
+      <i id="togglePassword" class="fa-solid fa-eye toggle-eye"></i>
+    </div>
     <button id="btnLogin">Iniciar sesión</button>
     <button id="btnRegister">Registrarse</button>
     <p id="msg"></p>

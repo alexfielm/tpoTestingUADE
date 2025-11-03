@@ -1,4 +1,14 @@
 const USERS_KEY = "users";
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
+
+togglePassword.addEventListener('click', () => {
+  const type = password.type === 'password' ? 'text' : 'password';
+  password.type = type;
+  togglePassword.classList.toggle('fa-eye');
+  togglePassword.classList.toggle('fa-eye-slash');
+});
+
 function loadUsers() {
   const raw = localStorage.getItem(USERS_KEY);
   return raw ? JSON.parse(raw) : [];
