@@ -109,7 +109,7 @@ body {
   width: 100%;
   text-align: center;
   padding: 10px 0;
-  background-color: rgba(13, 27, 42, 0.85);
+  background-color: rgb(13, 27, 42);
   color: white;
   border-radius: 0 0 10px 10px;
   font-weight: bold;
@@ -148,4 +148,35 @@ body {
 .boton{background-color:rgb(0, 183, 255);display: inline-block;color: black;padding: 5px 10px;margin: 10px;text-decoration: none;text-align: center;border-radius: 8px;}
 body {
   padding-bottom: var(--footer-height);
+}
+
+
+.buscador {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.buscador input {
+  width: 60%;
+  padding: 8px;
+  border-radius: 4px 0 0 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.buscador button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #000;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buscador button:hover {
+  background-color: #333;
 }
